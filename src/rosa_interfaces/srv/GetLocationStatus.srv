@@ -1,0 +1,5 @@
+# 요청 (Request)
+string location_name
+---
+# 응답 (Response)
+string status

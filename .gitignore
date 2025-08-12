@@ -1,0 +1,44 @@
+# ROS2 빌드 결과물
+build/
+install/
+log/
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE 설정 파일
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 관련
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.bak
+*.orig
+
+# 로그 파일
+*.log
+
+# 환경 설정 (개인별로 다를 수 있음)
+.env
+.envrc
+
+# ROS 관련 임시 파일
+.catkin_workspace
+devel/
+
+# 컴파일된 메시지/서비스 파일 (자동 생성됨)
+# install/ 폴더에 들어가므로 이미 제외됨
+
+# 사용자별 설정 파일 예시 (필요시 추가)
+# config_local.py
+# settings_personal.yaml
