@@ -12,10 +12,10 @@ class SimulationTest:
         self.task_manager = task_manager
         
         # ⭐️ 시뮬레이션 타이밍 설정 (테스트하기 쉽게 조정)
-        self.MOVE_TIME = 3.0      # 이동 시간 (초)
-        self.PICKUP_TIME = 3.0    # 픽업 시간 (초) 
-        self.DELIVERY_TIME = 3.0  # 배달 시간 (초)
-        self.CONFIRM_TIME = 3.0   # 확인 대기 시간 (초)
+        self.MOVE_TIME = 2.0      # 이동 시간 (초)
+        self.PICKUP_TIME = 2.0    # 픽업 시간 (초) 
+        self.DELIVERY_TIME = 2.0  # 배달 시간 (초)
+        self.CONFIRM_TIME = 30.0  # 확인 대기 시간 (초) - GUI에서 수동으로 하므로 길게
         
         # 시뮬레이션 모드용 장소 상태 추적
         self.simulated_location_states = {
@@ -39,14 +39,22 @@ class SimulationTest:
     
     def simulate_pickup(self, robot_name: str):
         """픽업 시뮬레이션"""
-        self.task_manager.get_logger().debug(f"(시뮬레이션) 로봇팔에 픽업 명령(1) 전송... ({self.PICKUP_TIME}초 소요)")
+        # 픽업 시작 로그
+        self.task_manager.publish_status_log("robot_arm", "PICKUP_START", f"ArUco 마커 인식 및 픽업 시작 for {robot_name}")
+        
+        self.task_manager.get_logger().info(f"🤖 (시뮬레이션) 로봇팔 픽업 작업 시작... ({self.PICKUP_TIME}초 소요)")
         threading.Timer(self.PICKUP_TIME, 
                        lambda: self.task_manager.arm_status_callback(
                            String(data=f"PICKUP_COMPLETE|{robot_name}"))).start()
     
     def simulate_delivery(self, robot):
         """배달 시뮬레이션"""
-        self.task_manager.get_logger().debug(f"(시뮬레이션) 배달 작업 진행 중... ({self.DELIVERY_TIME}초 소요)")
+        self.task_manager.get_logger().info(f"🚚 (시뮬레이션) 배달 작업 진행 중... ({self.DELIVERY_TIME}초 소요)")
+        
+        # 배달 시간 기록
+        if robot.current_task:
+            robot.current_task.delivery_time = time.time()
+            
         threading.Timer(self.DELIVERY_TIME, 
                        lambda: self.task_manager.simulate_delivery_completion(robot)).start()
     
@@ -65,7 +73,6 @@ class SimulationTest:
         self.task_manager.get_logger().debug(f"(시뮬레이션) '{location}' 상태를 '{new_status}'(으)로 변경 요청...")
         time.sleep(0.5)
         
-        # 현재 장소 상태 확인
         current_status = self.simulated_location_states.get(location, 'unknown')
         success = False
         
@@ -73,22 +80,26 @@ class SimulationTest:
             if current_status == 'available':
                 self.simulated_location_states[location] = 'reserved'
                 success = True
-                self.task_manager.publish_status_log(location, "RESERVED", f"{robot.name}이(가) 예약")
+                # ✅ GUI용으로 상태 변경을 브로드캐스트합니다.
+                self.task_manager.broadcast_location_status_change(location, "reserved")
             else:
                 success = False
                 
         elif new_status == 'busy':
+            # 로봇은 '예약된' 장소에만 '점유' 상태로 변경할 수 있습니다.
             if current_status == 'reserved':
                 self.simulated_location_states[location] = 'busy'
                 success = True
-                self.task_manager.publish_status_log(location, "BUSY", f"{robot.name}이(가) 점유")
+                # ✅ GUI용으로 상태 변경을 브로드캐스트합니다.
+                self.task_manager.broadcast_location_status_change(location, "busy")
             else:
                 success = False
                 
         elif new_status == 'available':
             self.simulated_location_states[location] = 'available'
             success = True
-            self.task_manager.publish_status_log(location, "AVAILABLE", f"{robot.name}이(가) 떠남")
+            # ✅ GUI용으로 상태 변경을 브로드캐스트합니다.
+            self.task_manager.broadcast_location_status_change(location, "available")
         
         class MockFuture:
             def __init__(self, success_val):

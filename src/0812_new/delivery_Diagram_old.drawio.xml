@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram name="ROSA 배달 업무 시퀀스" id="lI1UcmJVu4e7BlJ2c25F">
+    <mxGraphModel dx="320" dy="-163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZIq564LoRhPP0wq41EpO-262" value="ROSA 시스템 배달 업무 시퀀스 다이어그램 (LocationManager 통합 버전)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2330" y="1670" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-263" value="사용자" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2010" y="1730" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-264" value="CommandParser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2130" y="1730" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-265" value="TaskManager&#xa;(+LocationMgr)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2270" y="1730" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-266" value="관리자GUI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2410" y="1730" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-267" value="PathExecutor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2550" y="1730" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-268" value="로봇팔" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6f7e6;strokeColor=#4caf50;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2690" y="1730" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-269" value="DeliveryInterface" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="2830" y="1730" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-270" value="GUI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="3010" y="1730" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-271" value="DB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="3150" y="1730" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-272" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="2048" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-273" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2178" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-274" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2318" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-275" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="2458" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-276" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2598" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-277" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e6f7e6;strokeColor=#4caf50;" vertex="1" parent="1">
+          <mxGeometry x="2728" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-278" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="2888" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-279" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="3048" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-280" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="3178" y="1770" width="4" height="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-281" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2050" y="1810" as="sourcePoint" />
+            <mxPoint x="2178" y="1810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-282" value="&quot;3번 물 왼쪽방&quot;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="1790" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-283" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2180" y="1850" as="sourcePoint" />
+            <mxPoint x="2318" y="1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-284" value="assign_new_task(DP_03, 물, 왼쪽방)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2190" y="1830" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-285" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="1890" as="sourcePoint" />
+            <mxPoint x="2458" y="1890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-286" value="픽업대 예약 요청" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="1870" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-287" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2458" y="1920" as="sourcePoint" />
+            <mxPoint x="2320" y="1920" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-288" value="예약 성공" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="1900" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-289" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="1960" as="sourcePoint" />
+            <mxPoint x="2598" y="1960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-290" value="navigate_robot(DP_03, 픽업대)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2400" y="1940" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-291" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2598" y="2000" as="sourcePoint" />
+            <mxPoint x="2320" y="2000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-292" value="DP_03|SUCCESS" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="1980" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-293" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="2040" as="sourcePoint" />
+            <mxPoint x="2728" y="2040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-294" value="ArUco ID 6 (물)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="2020" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-295" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2728" y="2080" as="sourcePoint" />
+            <mxPoint x="2320" y="2080" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-296" value="PICKUP_COMPLETE|DP_03" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2450" y="2060" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-297" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="2120" as="sourcePoint" />
+            <mxPoint x="2458" y="2120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-298" value="왼쪽방 예약 요청" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="2100" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-299" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2458" y="2150" as="sourcePoint" />
+            <mxPoint x="2320" y="2150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-300" value="예약 성공" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2360" y="2130" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-301" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="2190" as="sourcePoint" />
+            <mxPoint x="2598" y="2190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-302" value="navigate_robot(DP_03, 왼쪽방)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2400" y="2170" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-303" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2598" y="2230" as="sourcePoint" />
+            <mxPoint x="2320" y="2230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-304" value="배달 완료" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2420" y="2210" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-305" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="2270" as="sourcePoint" />
+            <mxPoint x="2888" y="2270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-306" value="request_delivery_confirmation(task_info)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="2250" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-307" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2888" y="2300" as="sourcePoint" />
+            <mxPoint x="3048" y="2300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-308" value="ROS 토픽 발행" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2910" y="2280" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-309" value="물을(를) 받았습니까?\n[예] [아니오]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="2330" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-310" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3048" y="2400" as="sourcePoint" />
+            <mxPoint x="2888" y="2400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-311" value="업무ID|사용자ID|YES" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2910" y="2380" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-312" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2888" y="2430" as="sourcePoint" />
+            <mxPoint x="2320" y="2430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-313" value="handle_gui_confirmation_response(data)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="2410" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-314" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2888" y="2460" as="sourcePoint" />
+            <mxPoint x="3178" y="2460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-315" value="log_to_database(task_info, 수령완료)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2950" y="2440" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-316" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2320" y="2490" as="sourcePoint" />
+            <mxPoint x="2598" y="2490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-317" value="navigate_robot(DP_03, 3번 충전소)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="2470" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-318" value="1단계: 명령 입력 및 파싱" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="1790" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-319" value="2단계: 픽업대 예약 및 이동" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="1870" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-320" value="3단계: 픽업 작업" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="2020" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-321" value="4단계: 배달 이동" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="2100" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-322" value="5단계: DeliveryInterface 연동" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="2250" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-323" value="6단계: GUI 수령확인" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f0f0;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="2330" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZIq564LoRhPP0wq41EpO-324" value="7단계: DB 기록 및 복귀" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="3280" y="2430" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
